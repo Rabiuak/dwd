@@ -1,0 +1,323 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Tutorial for HiiT-DWD Dec-2021</title>
+    <link rel="icon" type="text/css" href="images/HiiTLogo.PNG">
+    <link type="text/css" href="tab.css" rel="stylesheet"/>
+    <script src="tab.js"></script>
+</head>
+<body>
+    <div id="header">
+        <img src="images/dwd.png" id="img1">
+        <h1 id="hd1">HiiT, DWD CLASS OF DECEMBER_2021</h1>
+        <h2 id="hd2">WEB DEVELOPMENT CLASS FOR BEGINNER</h2>
+        <img src="images/HiiTLogo.png" id="img2"/>
+    </div>
+    <div class="tab" >
+        <a href="index.html"> <button class="tablinks">Home</button></a>
+        <button class="tablinks" onclick="openCourse(event,'HTML')">HTML</button>
+        <button class="tablinks" onclick="openCourse(event,'CSS')">CSS</button>
+        <button class="tablinks" onclick="openCourse(event,'Javascript')">Javascript</button>
+        <button class="tablinks" onclick="openCourse(event,'Bootstrap')">Bootstrap</button>
+       <div  id="openN" class="tablinks" onclick="openNav()">
+           <!-- Use any element to open the sidenav -->
+           <span  class="dot"></span><br>
+            <span class="dot"></span><br>
+            <span  class="dot"></span>
+       </div>
+        
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" onclick="openCourse(event,'About')">About</a>
+        <a href="#" onclick="openCourse(event,'Service')">Services</a>
+        <a href="#" onclick="openCourse(event,'Clients')">Clients</a>
+        <a href="#" onclick="openCourse(event,'Contact')">Contact</a>
+    </div>
+      
+      <div id="default">
+            <h1 >Web Design</h1>
+            <article>
+            <p>Web design is a profession where a person designs a web page or a web site.
+                [1] The web page can have graphics, music, animations, and many other things on it. Some web design is done for businesses, and some is done for individual people. Some web designs are used a 
+                lot and have standard templates that are free for people to use (such as these)
+                People who design web pages are called web designers.[1] Web designers use HTML 
+                or Dynamic HTML (DHTML), Cascading Style Sheets (CSS), JavaScript, and many other technologies to make their pages.[2] Web designers can make their pages on the Internet using website building software, or offline on their computer. Web designers in the United States of America can earn between $31,650 and $69,510 a year, with a median salary of $46,327.[3]
+                Web design includes layouts, colors, graphics, fonts, and content.</p>
+            </article>
+      </div>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+    <div id="HTML" class="tabContent">
+       <h1>HTML</h1>
+       <article>
+           <h2>Introduction</h2>
+            First developed by Tim Berners-Lee in 1990, HTML is short for Hypertext Markup Language. HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web. Each page contains a series of connections to other pages called hyperlinks. Every web page you see on the Internet is written using one version of HTML code or another.
+             HTML code ensures the proper formatting of text and images so that your Internet browser may display them as they are intended to look. Without HTML, a browser would not know how to display text as elements or load images or other elements. HTML also provides a basic structure of the page, upon which Cascading Style Sheets are overlaid to change its appearance. One could think of HTML as the bones (structure) of a web page,
+            and CSS as its skin (appearance).
+            What does an HTML tag look like?<br>
+            What does HTML look like?<br>
+            What is HTML5?<br>
+            What does HTML5 look like?<br>
+            How to create and view HTML<br>
+            Which file extensions are used with HTML?<br>
+            How to pronounce HTML.<br>
+            Related HTML pages.<br>
+            HTML and web design questions and answers<br>
+            What does an HTML tag look like?<br>
+           <h2> HTML tag</h2>
+            As can be seen in the HTML tag example above, there are not many components. Almost all HTML tags have an opening tag that contains the name with any attributes, a close tag that contains a forward slash, and the name of the tag that is being closed. For tags that do not have a closing tag like &lt;img&gt;, it is best practice to end the tag with a forward slash.
+            
+            Each tag is contained within a less than and greater than angle brackets, and everything between the opening and closing tag is displayed or affected by the tag. In the example above, the &lt;a&gt; tag is creating a link called "Computer Hope" that is pointing to the hope.html file.
+            
+            Tip: See our HTML and Web Design Help page for a full listing of HTML tags.
+            
+            What does HTML look like?
+            The following is an example of a basic web page written in HTML as well as a description of each section and its function.
+            <xmp>
+        <!DOCType HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+        <html>
+          <head>
+          <title>Example page</title>
+          <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+          </head>
+          <body>
+          <h1>This is a heading</h1>
+          <p>This is an example of a basic HTML page.</p>
+          </body>
+        </html>
+            </xmp>
+       </article>
+    </div>
+    <div id="CSS" class="tabContent">
+            <h1>CSS</h1>
+            <article >
+                <h2>Introduction</h2>
+                     Short for cascading style sheets, CSS is a language used to describe reusable styles for presenting documents written in a markup language. Its concept was originated by Håkon Wium Lie in 1994. In December 1996, CSS was made a specification by the W3C and today allows web developers 
+                    to alter the layout and appearance of their web pages. For example, CSS may be used to change the font used in certain HTML element, as well as its size and color.
+                     A single CSS file may be linked to multiple pages, which allows a developer to change the appearance of all the pages at the same time.
+                    The following box contains a basic example of using CSS code to define fonts, the color of hyperlinks, and the color of a link when the mouse cursor hovers over it. In this specific example, we are only changing the HTML tags &lt;a&gt; and &lt;body&gt;, rather than creating any new class or id selectors.
+                    <xmp>
+            body {
+                font: normal 100% "trebuchet ms", Arial, Helvetica, sans-serif;
+              }
+              a {
+                color: #000000;
+              }
+              A:visited {
+                color: #005177;
+              }
+              a:hover {
+                color: #005177;
+              }
+    </xmp>
+    The CSS code in the box above can be inserted into the head section of a page's HTML using the following code. However, keep in mind that performing this action only applies these changes to a single page.
+    <xmp>
+    <style>
+    <!--
+          above code inserted here
+    -->
+    body{ 
+
+    }
+    </style>
+    </xmp>
+            </article> 
+         </div>
+<div id="Javascript" class="tabContent">
+<h1>JavaScript</h1>
+<article>
+    <h2>Introduction</h2>
+        Developed by Brendan Eich and originally known as LiveScript, 
+        the programming language JavaScript was renamed in 1995. JavaScript is an interpreted client-side scripting language that allows a web designer the ability to insert code into their web page. JavaScript is commonly placed into an HTML or ASP file and runs directly from the web page. It is utilized to perform tasks such as printing the time and date, create a calendar, or other tasks that are not possible through plain HTML.
+        
+        What is required to run JavaScript?<br>
+        Is JavaScript safe?<br>
+        Are Java and JavaScript the same thing?<br>
+        Hello, World! in JavaScript.<br>
+        Live example of JavaScript.<br>
+        List of JavaScript example scripts.<br>
+        Related pages.<br>
+        What is required to run JavaScript?<br>
+        JavaScript only requires an Internet browser with JavaScript enabled.<br> 
+        All browsers by default will have JavaScript enabled.<br>
+        <h2> Example</h2>
+        The below source code will change the background color of a page depending on the color of the day. As you can see in this example, the page will be a different color reflecting the time of day. This code should be placed in the <head> tags of HTML your code.
+        <xmp style="border:1px dashed red; color:aliceblue;">
+        Source code
+              <script type="text/javascript">
+              var now = new Date();
+              var hours = now.getHours();
+              
+              //Keep in code - copied by me
+              //Place this script in your HTML heading section
+              
+              document.write('It\'s now: ', hours, '<br><br>');
+              document.bgColor="#CC9900";
+              
+              //18-19 night
+              if (hours > 17 && hours < 20){
+                document.write ('<body style="background-color: orange">');
+              }
+              //20-21 night
+              else if (hours > 19 && hours < 22){
+                document.write ('<body style="background-color: orangered">');
+              }
+              //22-4 night
+              else if (hours > 21 || hours < 5){
+                document.write ('<body style="background-color: #C0C0C0;">');
+              }
+              //9-17 day
+              else if (hours > 8 && hours < 18){
+                document.write ('<body style="background-color: #616D7E">');
+              }
+              //7-8 day
+              else if (hours > 6 && hours < 9){
+                document.write ('<body style="background-color: skyblue">');
+              }
+              //5-6 day
+              else if (hours > 4 && hours < 7){
+                document.write ('<body style="background-color: steelblue">');
+              }
+              else {
+                document.write ('<body style="background-color: white">');
+              }
+              </script>
+                        </xmp>
+  </article>
+</div>
+<div id="Bootstrap" class="tabContent">
+      <h1>Bootstrap</h1>
+      <article>
+      <h2>Introduction</h2>
+          <p>Bootstrap is a free and open source front end development framework for the creation of 
+          websites and web apps. The Bootstrap framework is built on HTML, CSS, and JavaScript (JS) 
+          to facilitate the development of responsive, mobile-first sites and apps.</p>
+          
+          
+          <p> Responsive design makes it possible for a web page or app to detect the visitor’s
+            screen size and orientation and automatically adapt the display accordingly; the mobile 
+            first approach assumes that smartphones, tablets and task-specific mobile apps are employees'
+            primary tools for getting work done and addresses the requirements of those technologies in design.
+          Bootstrap includes user interface components, layouts and JS tools along with the framework for
+            implementation. The software is available precompiled or as source code.
+          Mark Otto and Jacob Thornton developed Bootstrap at Twitter as a means of improving the consistency of tools used on the site and reducing maintenance. The software was formerly known as Twitter Blueprint and is sometimes referred to as Twitter Bootstrap.
+          </p>
+          <h2>Example</h2>
+          Below example produce a responsive page to different devices:
+    <xmp style="border:1px dashed red; color:aliceblue;">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+  <div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+  </div>
+
+  <div class="container">
+  <div class="row">
+  <div class="col-sm-4">
+  <h3>Column 1</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  </div>
+  <div class="col-sm-4">
+  <h3>Column 2</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  </div>
+  <div class="col-sm-4">
+  <h3>Column 3</h3>        
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+  </div>
+  </div>
+  </div>
+
+
+  </body>
+  </html>
+
+  </xmp>
+  </article>
+ 
+</div>
+        <div id="About" class="tabContent">
+            <h1>About</h1>
+              <article >
+                    HiiT Plc is an experienced Company in the ICT Industry with major focus on IT
+                      training/Education, Publishing, IT Solutions Development & Services,
+                      e-Learning Solution Development and Implementation among other businesses
+
+            </article> 
+        </div>
+        <div id="Service" class="tabContent">
+              <h1>Services</h1>
+                <article >
+                      Our Services include:
+                      <ul>
+                          <li>Training/Education
+                              <ul>
+                                  <li>Web Design</li><li>CCNA(Networking)</li><li>Data Analysis</li><li>Project Management</li>
+                              </ul>
+                          </li>
+                          <li>Publishing
+                              <ul>
+                                      <li>Computer TextBooks for Schools</li><li>Different ICT Materials</li>
+                                  </ul>
+                          </li>
+                          <li>IT Solutions Development & Services</li>
+                      </ul>
+              </article> 
+        </div>
+        <div id="Clients" class="tabContent">
+                  <h1>Client</h1>
+                    <article >
+                          HiiT Plc is an experienced Company in the ICT Industry with major focus on IT
+                            training/Education, Publishing, IT Solutions Development & Services,
+                            e-Learning Solution Development and Implementation among other businesses
+          
+                  </article> 
+        </div>
+        <div id="Contact" class="tabContent">
+                      <h1>Contact</h1>
+                      <article>
+                      <address>
+                              <h3> Kano Centre</h3><hr>
+                            
+                              Al-Usabs House, No 15/17,Zaria Road, Kano
+                              Phone: 0803-2030-202, 0803-292-2059.
+                              Email: Enquiries@hiitplc.com<br>
+                              <h3>Lagos Centre</h3><hr>
+                              
+                              27 Obafemi Awolowo Way, Beside Obafemi Awolowo House, Ikeja, Lagos.
+                              Phone: 0816-1660-043, 0802-270-5992
+                              Email: Enquiries@hiitplc.com
+                              </address>
+                      </article>
+        </div>
+      </div>
+    </div>
+      <div id="footer">
+        &copy;HiiT, DWD Class of December 2021
+        <hr>
+        <p>Develop by RTech</p>
+      </div>
+
+</body>
+</html>
